@@ -1,0 +1,67 @@
+* {
+    transition: .5s;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+.main__window {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 33%;
+}
+.game__window {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0 50px; */
+}
+.btn__window {
+    background: url(./img/Wall\ texture.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.btn__item {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #808080;
+    border-radius: 20px;
+    padding: 0 20px;
+    user-select: none;
+    cursor: pointer;
+}
+.player {
+    display: block;
+    width: 100px;
+    height: 200px;
+    background-color: #3bed9d;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.enemy {
+    display: block;
+    width: 100px;
+    height: 200px;
+    background-color: #c80e64;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.player__stats, .enemy__stats {
+    display: flex;
+    flex-direction: column;
+}
